@@ -12,43 +12,43 @@ public class o226 {
         switch (name) {
             case "linear":
                 System.out.print("A : ");
-                int a = scanner.nextInt();
+                float a = scanner.nextFloat();
                 System.out.print("B : ");
-                int b = scanner.nextInt();
+                float b = scanner.nextFloat();
                 if (a == 0) System.out.println("No solution");
                 else System.out.println("Solution" + (-b/a));
                 break;
             case "system":
                 System.out.print("A11 : ");
-                int a11 = scanner.nextInt();
+                float a11 = scanner.nextFloat();
                 System.out.print("A12 : ");
-                int a12 = scanner.nextInt();
+                float a12 = scanner.nextFloat();
                 System.out.print("B1 : ");
-                int b1 = scanner.nextInt();
+                float b1 = scanner.nextFloat();
                 System.out.print("A21 : ");
-                int a21 = scanner.nextInt();
+                float a21 = scanner.nextFloat();
                 System.out.print("A22 : ");
-                int a22 = scanner.nextInt();
+                float a22 = scanner.nextFloat();
                 System.out.print("B2 : ");
-                int b2 = scanner.nextInt();
+                float b2 = scanner.nextFloat();
 
-                int det = a11*a22 - a21*a12;
-                int detx = (a22*b1) - (a21*b2);
-                int dety = (a11*b2) - (a12*b1);
+                float det = a11*a22 - a21*a12;
+                float detx = (a22*b1) - (a21*b2);
+                float dety = (a11*b2) - (a12*b1);
                 System.out.println("Solution : x = " + (detx/det) + ", y = " + (dety/det));
                 break;
             case "quadratic":
                 System.out.print("A : ");
-                int aq = scanner.nextInt();
+                float aq = scanner.nextFloat();
                 System.out.print("B : ");
-                int bq = scanner.nextInt();
+                float bq = scanner.nextFloat();
                 System.out.print("C : ");
-                int cq = scanner.nextInt();
+                float cq = scanner.nextFloat();
 
                 if (aq == 0 && bq != 0) {
                     System.out.println("Solution : x = " + (-cq/bq));
                 } else if (aq > 0) {
-                    int d = bq*bq - aq*cq*4;
+                    float d = bq*bq - aq*cq*4;
                     if (d < 0) {
                         System.out.println("No real solution");
                     } else if (d == 0) {

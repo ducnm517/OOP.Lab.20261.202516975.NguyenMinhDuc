@@ -6,18 +6,18 @@ public class o225 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Number 1 : ");
-        int n1 = scanner.nextInt();
+        float n1 = scanner.nextFloat();
         System.out.print("Operator : ");
         String name = scanner.nextLine(); 
-        int n2 = 0;
+        float n2 = 0;
         if (name == "/") {
             while (n2 == 0) {
                 System.out.print("Number 2 : ");
-                n2 = scanner.nextInt();
+                n2 = scanner.nextFloat();
             }
         } else {
             System.out.print("Number 2 : ");
-            n2 = scanner.nextInt();
+            n2 = scanner.nextFloat();
         }
         
 
