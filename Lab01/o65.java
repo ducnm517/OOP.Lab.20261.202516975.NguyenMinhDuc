@@ -14,6 +14,14 @@ public class o65 {
             }
         }
         float rt = 0;
+        System.out.print("Sorted : ");
+        for (int i = 0; i < ss.length; i++) {
+            System.out.print(ss[i]);
+            if (i != ss.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.print("\n");
         for (int i = 0; i < ss.length; i++) rt+=ss[i];
 
         System.out.println("Sum : " + rt + ", Average : "+(rt/ss.length));

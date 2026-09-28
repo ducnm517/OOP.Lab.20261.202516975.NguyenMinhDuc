@@ -38,12 +38,12 @@ public class o64 {
 
         while (!valid) {
             System.out.println("Enter Month");
-            String mo = scanner.nextLine();
+            String mo = scanner.next();
             System.out.println("Enter Year");
             int ye = scanner.nextInt();
 
             for (int i = 0; i < 4*12; i++) {
-                if (mo == set[i] && ye >= 0) {
+                if (mo.equals(set[i]) && ye >= 0) {
                     if (ye % 4 == 0) {
                         if (ye % 100 == 0 && ye % 400 !=0) continue;
                         System.out.println(29);

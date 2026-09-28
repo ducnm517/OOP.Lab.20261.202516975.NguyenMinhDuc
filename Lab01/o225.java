@@ -8,7 +8,7 @@ public class o225 {
         System.out.print("Number 1 : ");
         float n1 = scanner.nextFloat();
         System.out.print("Operator : ");
-        String name = scanner.nextLine(); 
+        String name = scanner.next(); 
         float n2 = 0;
         if (name == "/") {
             while (n2 == 0) {
